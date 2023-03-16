@@ -1,0 +1,8 @@
+trained_model_twitterv5 filter=lfs diff=lfs merge=lfs -text
+aitextgen/pytorch_model_124M.bin filter=lfs diff=lfs merge=lfs -text
+aitextgen/355M/model.ckpt.data-00000-of-00001 filter=lfs diff=lfs merge=lfs -text
+itextgen/124M/model.ckpt.data-00000-of-00001 filter=lfs diff=lfs merge=lfs -text
+trained_model_twitterv5/pytorch_model.bin filter=lfs diff=lfs merge=lfs -text
+aitextgen filter=lfs diff=lfs merge=lfs -text
+*.bin filter=lfs diff=lfs merge=lfs -text
+*.data-00000-of-00001 filter=lfs diff=lfs merge=lfs -text
