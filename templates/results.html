@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="static\script.js"></script>
+    <!-- <script type="text/javascript" src="..eel.js"></script>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>-->
+    <title>Fake Twitter</title>
+</head>
+<body>
+    <div class="top-right">
+        <a href="video.html">Help</a> 
+    </div>
+    <section class="centered" id="thread">
+        <div class="your-tweet">
+            <div class="back-page">
+            <a href="index.html"><img src="static\images\arrow-symbol.png" id="left-arrow"></a>
+            </div>
+            <h3>Tweet</h3>
+            <figure class="images">
+                <div>
+                    <img src="static\images\Default_pfp.svg.png" class="pfp" id="mypfp">
+                </div>
+                <figcaption class="usrname">
+                    <strong>Me</strong><br>
+                    <h5>@me</h5>
+                </figcaption>
+            </figure>
+            <div id="output">{{ prompt }}</div>
+        </div>
+        <section class="other-tweets">
+            <div class="tweet" id="firstT">
+                <img src="static\images\Default_pfp.svg.png" class="pfp">
+                <p>{{ text }}</p>
+            </div>
+            <div class="tweet" id="secondT">
+                <img src="static\images\Default_pfp.svg.png" class="pfp">
+                <p>{{ text2 }}</p>
+            </div>
+            <div class="tweet" id="thirdT">
+                <img src="static\images\Default_pfp.svg.png" class="pfp">
+                <p>{{ text3 }}</p>
+            </div>
+        </section>
+    </section>
+    <script type="text/javascript">
+        //const textValue = localStorage.getItem('textValue'); // get text val from local storage
+        //const outputElment = document.getElementById('output');
+        //outputElment.innerText = textValue; // display text val on page
+    </script>
+</body>
+</html>

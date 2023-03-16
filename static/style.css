@@ -1,0 +1,179 @@
+body {
+    background-color: lightblue;
+    font-family: arial;
+}
+
+#textbox {
+    height: 100px;
+    width: 300px;
+    transform: translate(20%, 23%);
+    font-family: arial;
+    font-size: 18px;
+    color: black;
+    border-width: 0 0 1px 0;
+    border-color: gainsboro;
+    resize: none;
+    outline: none;
+}
+
+#usrform #submit {
+    position: relative;
+    right: 35px;
+    transform: translate(40px, 60px);
+    background-color: #87CEFA;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    width: 70px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+#usrform #submit:hover {
+    cursor: pointer;
+}
+
+div #output {
+    padding-bottom: 15px;
+    transform: translate(0, -80px);
+    font-size: 17px;
+    color: rgb(33, 32, 32);
+    border: solid gainsboro;
+    border-width: 0 0 1px 0;
+}
+
+.top-right {
+    text-align: right;
+    float: right;
+}
+
+.top-right a {
+    color: black;
+}
+
+.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#white-box {
+    background-color: white;
+    border-radius: 15px;
+    width: 400px;
+    height: 220px;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    margin-top: -50px;
+    margin-left: -100px;
+}
+
+#thread {
+    height: 600px;
+    width: 400px;
+    top: 15%;
+    margin-top: -50px;
+    margin-left: -100px;
+    background-color: white;
+    border-radius: 15px;
+    left: 45%;
+    position: absolute;
+}
+
+#result {
+    transform: translate(10px, -110px);
+}
+
+.tweet {
+    padding-top: 10px;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: gainsboro;
+    top: -60%;
+    transform: translate(0, -70px);
+    position: relative;
+}
+
+.tweet p {
+    transform: translate(5px, 0);
+}
+
+#secondT, #thirdT {
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+#firstT {
+    animation: fadeIn 3s;
+}
+
+#secondT {
+    animation-delay: 3s;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+}
+
+#thirdT {
+    animation-delay: 6s;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    border: none;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.images #bird {
+    height: 35px;
+    transform: translate(10px, 35px);
+}
+
+#exit {
+    height: 12px;
+    transform: translate(10px, -5px);
+}
+
+.your-tweet h3 {
+    transform: translate(50px, -20px);
+    font-size: 20px;
+}
+
+.pfp {
+    height: 45px;
+}
+
+.tweet .pfp {
+    margin-left: 10px
+}
+
+#mypfp {
+    transform: translate(-30px, -20px);
+}
+
+.usrname {
+    transform: translate(25px, -63px);
+}
+
+.usrname h5 {
+    transform: translate(0px, -22px);
+    color: gray;
+}
+
+.othername {
+    top: 0px;
+    margin-top: 0px;
+    transform: translate(25px, 63px);
+}
+
+.back-page img {
+    height: 35px;
+}
+
+#left-arrow {
+    margin-left: 0px;
+    transform: translate(0, 32px);
+}
