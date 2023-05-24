@@ -12,8 +12,11 @@
     <title>Fake Twitter</title>
 </head>
 <body>
+    <audio autoplay>
+        <source src="static\piano touch.wav" type="audio/wav">
+    </audio>
     <div class="top-right">
-        <a href="video.html">Help</a> 
+        <a href="{{ url_for('help_redirect')}}" target="_blank">Help</a> 
     </div>
     <section class="centered" id="thread">
         <div class="your-tweet">

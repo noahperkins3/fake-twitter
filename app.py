@@ -21,16 +21,8 @@ def generate():
         subprompt = prompt + "."
         # Generate text using AI model
         text = ai.generate_one(prompt=subprompt, max_length=25, temperature=1, top_p=1)
-        # while not text.count(".") > 2:
-        #      text = ai.generate_one(prompt=prompt + ".", max_length=200, temperature=1, top_p=1)
-        # texts = text.split("." or "…")
-        # for text in texts:
-        #     text = re.sub("\..*[A-Za-z0-9]", "", text)
-
         text2 = ai.generate_one(prompt=subprompt, max_length=25, temperature=1, top_p=1)
         text3 = ai.generate_one(prompt=subprompt, max_length=25, temperature=1, top_p=1)
-
-
         # Render results template with generated text
         return redirect(url_for('results', text=text, prompt=prompt, text2=text2, text3=text3))
 
@@ -46,6 +38,10 @@ def results():
     text3 = re.sub(prompt + ". ", "", text3)
 
     return render_template('results.html', text=text, text2=text2, text3=text3, prompt=prompt)
+
+@app.route('/help_redirect')
+def help_redirect():
+    return render_template('video.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

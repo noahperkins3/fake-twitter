@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <meta charset="UTF-8">
@@ -11,28 +12,31 @@
     <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>-->
 </head>
+
 <body>
     <section class="centered" id="white-box">
         <div class="images">
             <img src="static\images\809529-200.png" id="exit">
-            <a href="https://twitter.com/home" target="_blank"><img src="static\images\free-twitter-logo-icon-2429-thumb.png" id="bird"></a>
+            <a href="https://twitter.com/home" target="_blank"><img
+                    src="static\images\free-twitter-logo-icon-2429-thumb.png" id="bird"></a>
         </div>
         <div id="testing"></div>
         <form id="usrform" method="POST" action="/generate">
-            <textarea required name="textbox" id="textbox" placeholder="What's happening?"
-                minlength="5" maxlength="30"></textarea>
+            <textarea required name="textbox" id="textbox" placeholder="What's happening?" minlength="5"
+                maxlength="30"></textarea>
             <a href="results.html"><button id="submit" type="submit">Tweet</button></a>
         </form>
     </section>
     <script type="text/javascript">
-        const textarea = document.getElementById('textbox');
-        const submitBtn = document.getElementById('submit');
+        //const textarea = document.getElementById('textbox');
+        //const submitBtn = document.getElementById('submit');
         //submitBtn.addEventListener('click', (event) => {
-            const textValue = textarea.value;
-            event.preventDefault();
-            localStorage.setItem('textValue', textValue);
+        //    const textValue = textarea.value;
+        //    event.preventDefault();
+        //    localStorage.setItem('textValue', textValue);
             //window.location.href = 'results.html';
         //});
     </script>
 </body>
+
 </html>
